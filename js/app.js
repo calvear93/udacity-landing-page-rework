@@ -9,7 +9,7 @@ window.onload = () => {
 
     // selects first section active by default
     const firstSection = Object.keys(sections)[0];
-    firstSection && setActive(firstSection);
+    firstSection && setActive(firstSection, false);
 
     window.onscroll = onScroll;
 }
