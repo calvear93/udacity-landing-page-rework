@@ -76,7 +76,7 @@ function setActive(activeId, triggerNavigation = true) {
             navItem.classList.add("active");
             section.classList.add("active");
 
-            triggerNavigation && section.scrollIntoView();
+            triggerNavigation && section.scrollIntoView({ block: 'center', behavior: 'smooth' });
         } else {
             navItem.classList.remove("active");
             section.classList.remove("active");
